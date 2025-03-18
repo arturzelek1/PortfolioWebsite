@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+.navbar .container {
+  color: white;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto Sans, sans-serif;
+}
+
+.navbar .navbar-brand {
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Avatar {
+  @extend .img-fluid !optional;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+.navbar .nav-link {
+  color: black !important;
+  text-decoration: none;
+  font-size: 1rem;
+}
