@@ -2,7 +2,7 @@ import "../styles/Navbar.scss";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand">
           <img
@@ -26,22 +26,22 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav justify-content-end ms-auto">
             <li className="nav-item">
-              <a className="nav-link mx-3" href="/Home">
+              <a className="nav-link" href="/">
                 HOME
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="/About">
+              <a className="nav-link" href="/About">
                 ABOUT
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="/Projects">
+              <a className="nav-link" href="/Projects">
                 PROJECTS
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="/Contact">
+              <a className="nav-link" href="/Contact">
                 CONTACT
               </a>
             </li>

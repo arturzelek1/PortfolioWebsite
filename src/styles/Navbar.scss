@@ -1,31 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-.navbar .container {
-  color: white;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  font-family: Noto Sans, sans-serif;
-}
+.navbar {
+  background-color: rgba(
+    30,
+    30,
+    30,
+    0.8
+  ) !important; // Półprzezroczyste ciemne tło
+  font-family: "Noto Sans", sans-serif;
 
-.navbar .navbar-brand {
-  font-size: 1rem;
-  align-items: center;
-  justify-content: center;
-}
+  .container {
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.Avatar {
-  @extend .img-fluid !optional;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  user-select: none;
-  pointer-events: none;
-}
+  .navbar-brand {
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white !important; // Jasny tekst dla brandu
+  }
 
-.navbar .nav-link {
-  color: black !important;
-  text-decoration: none;
-  font-size: 1rem;
+  .Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .nav-link {
+    color: white !important; // Jasny tekst dla linków
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px; // Dodatkowy margines dla lepszego rozłożenia linków
+
+    &:hover {
+      color: #ccc !important; // Kolor hover dla linków
+    }
+  }
+
+  .navbar-toggler {
+    border-color: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); // Jasna ramka dla przycisku togglera
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); // Jasna ikona togglera
+    }
+  }
 }
