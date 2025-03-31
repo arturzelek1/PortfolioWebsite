@@ -1,6 +1,12 @@
 import "../styles/Navbar.scss";
 
-function Navbar() {
+interface SectionProps {
+  about: React.RefObject<HTMLDivElement | null>;
+  projects: React.RefObject<HTMLDivElement | null>;
+  contact: React.RefObject<HTMLDivElement | null>;
+}
+
+function Navbar({ sectionRefs }: { sectionRefs: SectionProps }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container-fluid">
@@ -26,22 +32,50 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav justify-content-end ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a
+                className="nav-link"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                style={{ cursor: "pointer" }}
+              >
                 HOME
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/About">
+              <a
+                className="nav-link"
+                onClick={() =>
+                  sectionRefs.about.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+                style={{ cursor: "pointer" }}
+              >
                 ABOUT
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Projects">
+              <a
+                className="nav-link"
+                onClick={() =>
+                  sectionRefs.projects.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+                style={{ cursor: "pointer" }}
+              >
                 PROJECTS
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Contact">
+              <a
+                className="nav-link"
+                onClick={() =>
+                  sectionRefs.contact.current?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }
+                style={{ cursor: "pointer" }}
+              >
                 CONTACT
               </a>
             </li>

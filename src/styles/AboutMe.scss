@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+$font-family: "Noto Sans", sans-serif;
+
+.about-me {
+  size: 1.5rem;
+  font-family: $font-family;
+  color: white;
+  animation: appear linear;
+  animation-timeline: view();
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

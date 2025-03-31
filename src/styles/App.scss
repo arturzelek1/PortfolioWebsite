@@ -1,0 +1,20 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%; /* Rozciąga się razem z treścią */
+  z-index: -1; /* Umieszcza tło za treścią */
+}
+
+.content {
+  position: relative; /* Aby treść była nad tłem */
+  z-index: 1;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh; /* Każda sekcja zajmuje co najmniej wysokość ekranu */
+  display: flex;
+}
