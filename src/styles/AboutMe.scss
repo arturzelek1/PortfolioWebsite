@@ -2,20 +2,33 @@
 
 $font-family: "Noto Sans", sans-serif;
 
-.about-me {
-  size: 1.5rem;
-  font-family: $font-family;
+.about-me-container {
   color: white;
-  animation: appear linear;
-  animation-timeline: view();
+  font-family: $font-family;
 }
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
+
+.about-me-name {
+  font-size: 3rem;
+}
+
+.about-me-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+
+.row {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-description,
+.about-me-title {
+  color: #838282;
+  font-size: 1rem;
+}
+
+img {
+  width: 25px;
+  height: 25px;
 }

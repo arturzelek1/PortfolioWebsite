@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import "../styles/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Element } from "react-scroll";
 import AnimatedBackground from "./AnimatedBackground";
 
