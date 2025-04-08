@@ -57,7 +57,7 @@ const AnimatedBackground: React.FC = () => {
 
           // Jeśli kursor jest blisko cząsteczki, odpychaj ją
           if (distance < 100) {
-            const force = (100 - distance) / 3000; // Zmniejszona siła odpychania
+            const force = (100 - distance) / 1000000; // Zmniejszona siła odpychania
             this.speedX -= (dx / distance) * force; // Odpychaj w przeciwnym kierunku
             this.speedY -= (dy / distance) * force;
           }

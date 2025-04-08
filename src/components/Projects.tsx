@@ -7,9 +7,7 @@ interface ProjectsProps {
 function Projects({ sectionRefs }: ProjectsProps) {
   return (
     <div className="about-me-container" ref={sectionRefs}>
-      <div className="about-me">
-        Crafting intuitive solutions, designed with users in mind.
-      </div>
+      <div className="about-me">SELECTED PROJECTS</div>
     </div>
   );
 }

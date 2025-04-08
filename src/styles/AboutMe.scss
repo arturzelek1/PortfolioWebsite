@@ -11,6 +11,12 @@ $font-family: "Noto Sans", sans-serif;
   font-size: 3rem;
 }
 
+.about-me-stack {
+  font-size: 1.5rem;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
 .about-me-title {
   padding-bottom: 5px;
   border-bottom: 1px solid #333;
@@ -28,7 +34,30 @@ $font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
 }
 
-img {
-  width: 25px;
-  height: 25px;
+.about-me-skills {
+  font-family: $font-family;
+  font-size: 1.25rem;
+  gap: 30px;
+  padding-bottom: 75px;
+}
+
+.about-me-skills-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.about-me-skills img {
+  margin-right: 10px;
+}
+.brand-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.brand-logo-dotnet {
+  width: 50px;
+  height: 30px;
+}
+.brand-logo-tailwind {
+  width: 40px;
+  height: 30px;
 }
