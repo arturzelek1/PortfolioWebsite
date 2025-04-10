@@ -5,8 +5,15 @@ const FrontPage: React.FC = () => {
     <div className="FrontPage">
       <div className="container position-absolute top-50 start-50 translate-middle">
         <div className="content">
-          <p className="custom-h4">Hi, I'm Artur</p>
-          <p className="custom-h1">FRONTEND DEVELOPER</p>
+          <div className="row">
+            <p className="custom-h4 col-12 col-md-12 col-lg-12">
+              Hi, I'm Artur
+            </p>
+          </div>
+          <div className="row">
+            <p className="custom-h1 col-12 col-md-12 col-lg-12">FULLSTACK</p>
+            <p className="custom-h1 col-12 col-md-12 col-lg-11">DEVELOPER</p>
+          </div>
           <p className="custom-h5">
             Driven by innovation, delivering impactful software solutions.
           </p>

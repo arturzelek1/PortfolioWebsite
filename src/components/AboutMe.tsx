@@ -35,7 +35,7 @@ function AboutMe({ sectionRefs }: AboutMeProps) {
         </div>
       </div>
       <div className="row">
-        <div className="about-me-stack col-12 col-md-12 col-lg-8">My Stack</div>
+        <div className="about-me-stack col-12 col-md-12 col-lg-8">MY STACK</div>
       </div>
       <div className="about-me-skills-container container-fluid">
         <div className="row">

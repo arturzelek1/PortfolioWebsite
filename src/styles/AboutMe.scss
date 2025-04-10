@@ -7,6 +7,10 @@ $font-family: "Noto Sans", sans-serif;
   font-family: $font-family;
 }
 
+.about-me-info {
+  margin-top: 150px;
+}
+
 .about-me-name {
   font-size: 3rem;
 }
@@ -47,6 +51,8 @@ $font-family: "Noto Sans", sans-serif;
 }
 .about-me-skills img {
   margin-right: 10px;
+  user-select: none;
+  pointer-events: none;
 }
 .brand-logo {
   width: 30px;
