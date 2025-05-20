@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import FrontPage from "./FrontPage";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
-import Contact from "./Contact";
+import Contact from "./Footer";
 import "../styles/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";

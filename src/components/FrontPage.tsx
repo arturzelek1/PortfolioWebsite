@@ -29,11 +29,26 @@ const FrontPage: React.FC = () => {
         </div>
       </div>
       <div className="MouseScrollDown position-absolute bottom-0 start-50 translate-middle">
-        <img
-          src="/assets/down-arrow.png"
+        <svg
           className="arrow-down"
-          alt="Scroll down"
-        ></img>
+          width="100%"
+          height="auto"
+          viewBox="0 0 300 120"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10,50 150,80 290,50"
+            fill="none"
+            stroke="#333"
+            strokeWidth={5}
+          />
+          <polyline
+            points="10,80 150,110 290,80"
+            fill="none"
+            stroke="#333"
+            strokeWidth={5}
+          />
+        </svg>
       </div>
     </div>
   );
