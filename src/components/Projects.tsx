@@ -47,7 +47,6 @@ function Projects({ sectionRefs }: ProjectsProps) {
       </div>
 
       <div className="row">
-        {/* LEWA STRONA – Lista projektów */}
         <div className="col-lg-7">
           <ol className="custom-number-list">
             {projects.map((project) => (
@@ -71,7 +70,6 @@ function Projects({ sectionRefs }: ProjectsProps) {
           </ol>
         </div>
 
-        {/* PRAWA STRONA – Obrazek podglądu */}
         <div className="col-lg-3 position-relative d-none d-lg-block">
           <AnimatePresence>
             {hoveredProject && (
