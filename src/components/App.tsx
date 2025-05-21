@@ -35,7 +35,7 @@ function App() {
         <Projects sectionRefs={sectionRefs.projects} />
       </Element>
 
-      <Element name="contact" className="section">
+      <Element name="contact" className="section-footer">
         <Contact sectionRefs={sectionRefs.contact} />
       </Element>
     </>

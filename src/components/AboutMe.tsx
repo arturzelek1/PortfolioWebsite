@@ -1,12 +1,42 @@
 import "../styles/AboutMe.scss";
-import { RefObject } from "react";
+import { RefObject, useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface AboutMeProps {
   sectionRefs: RefObject<HTMLDivElement | null>;
 }
+gsap.registerPlugin(ScrollTrigger);
+
 function AboutMe({ sectionRefs }: AboutMeProps) {
+  const aboutMeRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!aboutMeRef.current) return;
+
+    gsap.fromTo(
+      aboutMeRef,
+      { autoAlpha: 0, y: 40 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: aboutMeRef.current,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+          markers: false,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div className="about-me-container container-fluid" ref={sectionRefs}>
+    <div
+      className="about-me-container container-fluid fade-section"
+      ref={sectionRefs}
+    >
       <div className="about-me-info">
         <div className="row">
           <div className="about-me-title col-12 col-md-12 col-lg-8">

@@ -3,18 +3,21 @@
 $font-family: "Noto Sans", sans-serif;
 
 .contact-section-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: $font-family;
   font-weight: 400;
   color: white;
+  padding-top: 3rem;
+  text-align: center;
 }
 
 .contact-section-subtitle {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: $font-family;
   font-weight: 400;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .contact-section-subtitle {
@@ -22,7 +25,7 @@ $font-family: "Noto Sans", sans-serif;
     color: white;
     text-decoration: none;
   }
-  li {
-    list-style: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
